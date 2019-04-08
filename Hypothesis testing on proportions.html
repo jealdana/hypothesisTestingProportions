@@ -11880,7 +11880,7 @@ With an alpha of 0.05</p>
 <p>Null Hypothesis:   p2015 &lt;= p2016<br>
 Alternative hypothesis:  2015 &gt; p2016<br>
 With an alpha of 0.05</p>
-<p><img src="./00hypothesis.png" alt="image.png"></p>
+<p><img src="00hypothesis.png" alt="image.png"></p>
 <p>Null Hypothesis:   p2015 - p2016 &lt;=  0<br>
 Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <p>With an alpha of 0.05</p>
@@ -11901,7 +11901,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Right tail on alpha of 0.05
-<img src="./04test.png" alt="image.png"></p>
+<img src="04test.png" alt="image.png"></p>
 
 </div>
 </div>
@@ -11936,7 +11936,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In order to calculate z
-<img src="./01zscore.png" alt="image.png"></p>
+<img src="01zscore.png" alt="image.png"></p>
 <p>We need to follow the next steps:</p>
 <ol>
 <li>Set the variables given by the problem</li>
@@ -11961,7 +11961,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">setVariables</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span><span class="n">obs1</span><span class="p">,</span><span class="n">n2</span><span class="p">,</span><span class="n">obs2</span><span class="p">,</span> <span class="n">alpha</span><span class="p">):</span>
@@ -11995,7 +11995,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[102]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">getSampleProportions</span><span class="p">(</span><span class="n">obs1</span><span class="p">,</span><span class="n">obs2</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">):</span>
@@ -12034,7 +12034,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[102]:</div>
+<div class="prompt output_prompt">Out[2]:</div>
 
 
 
@@ -12062,7 +12062,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>In order to get the Standard Error of the Difference</p>
-<p><img src="./02error.png" alt="image.png"></p>
+<p><img src="02error.png" alt="image.png"></p>
 <p>We need to follow these steps:</p>
 <ol>
 <li>Get the pool proportion</li>
@@ -12077,7 +12077,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h5 id="1.-Get-the-pool-proportion">1. Get the pool proportion<a class="anchor-link" href="#1.-Get-the-pool-proportion">&#182;</a></h5><p>Insert variables in the following formula:</p>
-<p><img src="./03poolprop.png" alt="image.png"></p>
+<p><img src="03poolprop.png" alt="image.png"></p>
 <p>Where:</p>
 <ul>
 <li>x1 and n1 are the observations and sample size of 2015 respectively</li>
@@ -12092,7 +12092,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[103]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">getPoolProportion</span><span class="p">(</span><span class="n">obs1</span><span class="p">,</span><span class="n">obs2</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">):</span>
@@ -12101,7 +12101,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <span class="k">def</span> <span class="nf">getSigmaDiffProportions</span><span class="p">(</span><span class="n">poolProportion</span><span class="p">,</span><span class="n">n1</span><span class="p">,</span><span class="n">n2</span><span class="p">):</span>
     <span class="kn">import</span> <span class="nn">math</span>
     <span class="n">qBar</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">poolProportion</span><span class="p">;</span>
-    <span class="n">numerator</span> <span class="o">=</span> <span class="n">pBar</span><span class="o">*</span><span class="n">poolProportion</span><span class="p">;</span>
+    <span class="n">numerator</span> <span class="o">=</span> <span class="n">qBar</span><span class="o">*</span><span class="n">poolProportion</span><span class="p">;</span>
     <span class="n">denominator</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">n1</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="n">n2</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">numerator</span><span class="o">*</span><span class="n">denominator</span><span class="p">)</span>
 
@@ -12129,14 +12129,14 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <p>This block provide the steps to:<br>
 1) Get the z-score, and<br>
 2) Do the hypothesis testing (Here we will need alpha)
-<img src="./01zscore.png" alt="image.png"></p>
+<img src="01zscore.png" alt="image.png"></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># This block provide the steps to:</span>
@@ -12184,8 +12184,8 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Z-score of -1.072811
-P-value of 0.141678
+<pre>Z-score of -0.700057
+P-value of 0.241946
 </pre>
 </div>
 </div>
@@ -12220,7 +12220,7 @@ P-value of 0.141678
 <p>Null Hypothesis:   p2015 &lt;= p2016<br>
 Alternative hypothesis:  2015 &gt; p2016<br>
 With an alpha of 0.05</p>
-<p><img src="./00hypothesis.png" alt="image.png"></p>
+<p><img src="00hypothesis.png" alt="image.png"></p>
 <p>Null Hypothesis:   p2015 - p2016 &lt;=  0<br>
 Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 <p>With an alpha of 0.05</p>
@@ -12230,7 +12230,7 @@ Alternative hypothesis:  p2015 - p2016 &gt; 0</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Conclusion</span>
